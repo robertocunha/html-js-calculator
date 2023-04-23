@@ -28,7 +28,7 @@ equal.addEventListener("click", () => {
   let inputValue = input.value;
   try {
     //evaluate user's input
-    let solution = eval(inputValue);
+    let solution = math.evaluate(inputValue);
     //True for natural numbers
     //false for decimals
     if (Number.isInteger(solution)) {
