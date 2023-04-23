@@ -4,7 +4,7 @@ let button_input = document.querySelectorAll(".input-button");
 //Refer input,equal,clear and erase
 let input = document.getElementById("input-id");
 let equal = document.getElementById("equal-id");
-let clear = document.getElementById("clearid");
+let clear = document.getElementById("clear-id");
 let erase = document.getElementById("erase-id");
 
 window.onload = () => {
