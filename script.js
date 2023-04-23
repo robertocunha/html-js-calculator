@@ -1,4 +1,4 @@
-let operationJustCompleted = 0;
+let operationJustCompleted = false;
 //Refer all buttons excluding AC and DEL
 let inputButtons = document.querySelectorAll(".input-button");
 //Refer input,equal,clear and erase
@@ -13,9 +13,9 @@ window.onload = () => {
 
 inputButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    if (operationJustCompleted == 1) {
+    if (operationJustCompleted == true) {
       input.value = "";
-      operationJustCompleted = 0;
+      operationJustCompleted = false;
     }
 
     input.value += button.dataset.value;
@@ -24,7 +24,7 @@ inputButtons.forEach((button) => {
 
 //Solve the user's input when clicked on equal sign
 equal.addEventListener("click", () => {
-  operationJustCompleted = 1;
+  operationJustCompleted = true;
   let inputValue = input.value;
   try {
     //evaluate user's input
