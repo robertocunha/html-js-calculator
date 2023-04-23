@@ -11,16 +11,16 @@ window.onload = () => {
   input.value = "";
 };
 
-inputButtons.forEach((button) => {
+for (const button of inputButtons) {
   button.addEventListener("click", () => {
-    if (operationJustCompleted == true) {
+    if (operationJustCompleted === true) {
       input.value = "";
       operationJustCompleted = false;
     }
-
+    
     input.value += button.dataset.value;
   });
-});
+} 
 
 //Solve the user's input when clicked on equal sign
 equal.addEventListener("click", () => {
