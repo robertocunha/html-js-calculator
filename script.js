@@ -1,7 +1,7 @@
 let operationJustCompleted = false;
-//Refer all buttons excluding AC and DEL
+//Refer all buttons excluding equal (=), C and Bcksp 
 let inputButtons = document.querySelectorAll(".input-button");
-//Refer input,equal,clear and erase
+
 let input = document.getElementById("input-id");
 let equal = document.getElementById("equal-id");
 let clear = document.getElementById("clear-id");
@@ -27,12 +27,10 @@ equal.addEventListener("click", () => {
   operationJustCompleted = true;
   let inputValue = input.value;
   try {
-    //evaluate user's input
     let solution = math.evaluate(inputValue);
     
     input.value = solution.toFixed(8).replace(/\.?0+$/, '');
   } catch (err) {
-    //If user has entered invalid input
     alert("Invalid Input");
   }
 });
