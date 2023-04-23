@@ -29,13 +29,8 @@ equal.addEventListener("click", () => {
   try {
     //evaluate user's input
     let solution = math.evaluate(inputValue);
-    //True for natural numbers
-    //false for decimals
-    if (Number.isInteger(solution)) {
-      input.value = solution;
-    } else {
-      input.value = solution.toFixed(2);
-    }
+    
+    input.value = solution.toFixed(8).replace(/\.?0+$/, '');
   } catch (err) {
     //If user has entered invalid input
     alert("Invalid Input");
