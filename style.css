@@ -49,7 +49,7 @@
     cursor: pointer;
     border-radius: 5px;
   }
-  input[type="button"]#equal {
+  input[type="button"]#equal-id {
     grid-row: span 2;
     background-color: #FA726B;
   }
