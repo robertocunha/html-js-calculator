@@ -1,6 +1,6 @@
-let equal_pressed = 0;
+let operationJustCompleted = 0;
 //Refer all buttons excluding AC and DEL
-let button_input = document.querySelectorAll(".input-button");
+let inputButtons = document.querySelectorAll(".input-button");
 //Refer input,equal,clear and erase
 let input = document.getElementById("input-id");
 let equal = document.getElementById("equal-id");
@@ -11,24 +11,24 @@ window.onload = () => {
   input.value = "";
 };
 
-button_input.forEach((button_class) => {
-  button_class.addEventListener("click", () => {
-    if (equal_pressed == 1) {
+inputButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (operationJustCompleted == 1) {
       input.value = "";
-      equal_pressed = 0;
+      operationJustCompleted = 0;
     }
 
-    input.value += button_class.dataset.value;
+    input.value += button.dataset.value;
   });
 });
 
 //Solve the user's input when clicked on equal sign
 equal.addEventListener("click", () => {
-  equal_pressed = 1;
-  let inp_val = input.value;
+  operationJustCompleted = 1;
+  let inputValue = input.value;
   try {
     //evaluate user's input
-    let solution = eval(inp_val);
+    let solution = eval(inputValue);
     //True for natural numbers
     //false for decimals
     if (Number.isInteger(solution)) {
