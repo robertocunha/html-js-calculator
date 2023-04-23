@@ -5,7 +5,7 @@ let inputButtons = document.querySelectorAll(".input-button");
 let input = document.getElementById("input-id");
 let equal = document.getElementById("equal-id");
 let clear = document.getElementById("clear-id");
-let erase = document.getElementById("erase-id");
+let bcksp = document.getElementById("bcksp-id");
 
 window.onload = () => {
   input.value = "";
@@ -40,6 +40,6 @@ clear.addEventListener("click", () => {
   input.value = "";
 });
 //Erase Single Digit
-erase.addEventListener("click", () => {
+bcksp.addEventListener("click", () => {
   input.value = input.value.substr(0, input.value.length - 1);
 });
