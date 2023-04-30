@@ -21,10 +21,8 @@
     border-radius: 8px;
     box-shadow: 0 20px 50px rgb(40,113,85, 0.4);
   }
-  .display {
-    width: 100%;
-  }
-  .display input {
+
+  input {
     width: 100%;
     padding: 15px 10px;
     text-align: right;
@@ -33,7 +31,7 @@
     color: #ffffff;
     font-size: 35px;
   }
-  .display input::placeholder {
+  input::placeholder {
     color: #B9B6C8;
   }
   .buttons {
