@@ -41,6 +41,7 @@
     margin-top: 40px;
   }
   .buttons input[type="button"] {
+    text-align: center;
     font-size: 20px;
     padding: 17px;
     border: none;
