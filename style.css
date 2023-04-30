@@ -5,17 +5,19 @@
     font-family: "Roboto Mono", monospace;
   }
   body {
-    height: 100vh;
     background-color: #3BAA80;
+  }
+  h1 {
+    margin-bottom: 5rem;
+  }
+  .calculator-container {
+    display: flex;
+    justify-content: center;
   }
   .calculator {
     width: 400px;
     background-color: #2E8463;
     padding: 50px 30px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
     border-radius: 8px;
     box-shadow: 0 20px 50px rgb(40,113,85, 0.4);
   }
