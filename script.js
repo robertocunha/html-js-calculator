@@ -1,6 +1,6 @@
 let operationJustCompleted = false;
 //Refer all buttons excluding equal (=), C and Bcksp 
-let inputButtons = document.querySelectorAll(".input-button");
+let inputButtons = document.querySelectorAll("[data-value]");
 
 let input = document.getElementById("input-id");
 let equal = document.getElementById("equal-id");
