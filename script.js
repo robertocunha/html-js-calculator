@@ -32,6 +32,7 @@ equal.addEventListener("click", () => {
     input.value = solution.toFixed(8).replace(/\.?0+$/, '');
   } catch (err) {
     alert("Invalid Input");
+    input.value = "";
   }
 });
 
