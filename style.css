@@ -4,16 +4,20 @@
     box-sizing: border-box;
     font-family: "Roboto Mono", monospace;
   }
+
   body {
     background-color: #3BAA80;
   }
+
   h1 {
     margin-bottom: 5rem;
   }
+
   .calculator-container {
     display: flex;
     justify-content: center;
   }
+  
   .calculator {
     width: 400px;
     background-color: #2E8463;
@@ -35,7 +39,7 @@
   input::placeholder {
     color: #B9B6C8;
   }
-  
+
   .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
