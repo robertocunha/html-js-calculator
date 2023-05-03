@@ -42,5 +42,5 @@ clear.addEventListener("click", () => {
 });
 //Erase Single Digit
 bcksp.addEventListener("click", () => {
-  input.value = input.value.substr(0, input.value.length - 1);
+  input.value = input.value.slice(0, -1);
 });
