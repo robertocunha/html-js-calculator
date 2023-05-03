@@ -31,7 +31,7 @@ equal.addEventListener("click", () => {
     const precision = 8;
     input.value = math.format(solution, precision);
   } catch (err) {
-    alert("Invalid Input");
+    alert("Expressão Inválida");
     input.value = "";
   }
 });
