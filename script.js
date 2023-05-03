@@ -28,8 +28,8 @@ equal.addEventListener("click", () => {
   let inputValue = input.value;
   try {
     let solution = math.evaluate(inputValue);
-    
-    input.value = solution.toFixed(8).replace(/\.?0+$/, '');
+    const precision = 8;
+    input.value = math.format(solution, precision);
   } catch (err) {
     alert("Invalid Input");
     input.value = "";
